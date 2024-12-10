@@ -132,7 +132,7 @@ public class DelegateMocking<R> {
         if (callback == null) {
             callback = new RestCallbackWrapper(
                     captorValueOrDefault(successCaptor, (o, r) -> { }),
-                    captorValueOrDefault(alwaysCaptor, (r) -> { }),
+                    captorValueOrDefault(alwaysCaptor, r -> { }),
                     captorValueOrDefault(failureCaptor, (t, r) -> { }));
         }
 

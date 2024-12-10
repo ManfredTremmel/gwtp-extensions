@@ -21,8 +21,6 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import javax.inject.Singleton;
-
 import com.gwtplatform.dispatch.rest.delegates.client.ResourceDelegate;
 import com.gwtplatform.dispatch.rest.delegates.processors.methods.DelegateMethodProcessors;
 import com.gwtplatform.processors.tools.AbstractContextProcessor;
@@ -33,6 +31,8 @@ import com.gwtplatform.processors.tools.logger.Logger;
 import com.gwtplatform.processors.tools.outputter.CodeSnippet;
 import com.gwtplatform.processors.tools.outputter.Outputter;
 import com.gwtplatform.processors.tools.utils.Utils;
+
+import jakarta.inject.Singleton;
 
 import static com.gwtplatform.dispatch.rest.processors.NameUtils.findRestModuleType;
 import static com.gwtplatform.processors.tools.bindings.BindingContext.newBinding;

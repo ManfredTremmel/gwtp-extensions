@@ -70,7 +70,7 @@ public abstract class AbstractDelegateStubber<R, S extends AbstractDelegateStubb
     /**
      * This is similar than calling {@link #withResponse(Response)}. Instead, a mock of {@link Response} is created and
      * configured to return <code>status</code>.
-     * <p/>
+     * <p>
      * If {@link #withResponse(Response)} was previously called, the previously configured {@link Response} will be
      * overwritten.
      *

@@ -133,8 +133,10 @@ public class FieldManager {
 
     /**
      * Converts the given field to its getter. Example:
-     *  <li> myWidgetX = get_myWidgetX()
-     *  <li> f_html1 = get_f_html1()
+     * <ul>
+     *  <li> myWidgetX = get_myWidgetX()</li>
+     *  <li> f_html1 = get_f_html1()</li>
+     * </ul>
      */
     public String convertFieldToGetter(String fieldName) {
         // could this conversion can be moved to FieldWriter?
@@ -221,8 +223,8 @@ public class FieldManager {
      * When making a field we peek at the {@link #parsedFieldStack} to make sure
      * that the field that holds the widget currently being parsed will depended
      * upon the field being declared. This ensures, for example, that dom id
-     * fields (see {@link UiBinderWriter#declareDomIdHolder()}) used by an HTMLPanel
-     * will be declared before it is.
+     * fields (see {@link com.google.gwt.uibinder.rebind.UiBinderWriter#declareDomIdHolder(String)})
+     * used by an HTMLPanel will be declared before it is.
      *
      * @param fieldWriterType the field writer type associated
      * @param fieldType the type of the new field
@@ -257,8 +259,8 @@ public class FieldManager {
      * When making a field we peek at the {@link #parsedFieldStack} to make sure
      * that the field that holds the widget currently being parsed will depended
      * upon the field being declared. This ensures, for example, that dom id
-     * fields (see {@link UiBinderWriter#declareDomIdHolder()}) used by an HTMLPanel
-     * will be declared before it is.
+     * fields (see {@link com.google.gwt.uibinder.rebind.UiBinderWriter#declareDomIdHolder(String)})
+     * used by an HTMLPanel will be declared before it is.
      *
      * @throws UnableToCompleteException on duplicate name
      * @return a new {@link FieldWriter} instance
@@ -274,9 +276,11 @@ public class FieldManager {
      * Register a new field for {@link com.google.gwt.uibinder.client.LazyDomElement}
      * types. LazyDomElement fields can only be associated with html elements. Example:
      *
+     * <ul>
      *  <li>LazyDomElement&lt;DivElement&gt; -&gt; &lt;div&gt;</li>
      *  <li>LazyDomElement&lt;Element&gt; -&gt; &lt;div&gt;</li>
      *  <li>LazyDomElement&lt;SpanElement&gt; -&gt; &lt;span&gt;</li>
+     * </ul>
      *
      * @param templateFieldType the html type to bind, eg, SpanElement, DivElement, etc
      * @param ownerField the field instance
@@ -300,8 +304,8 @@ public class FieldManager {
      * When making a field we peek at the {@link #parsedFieldStack} to make sure
      * that the field that holds the widget currently being parsed will depended
      * upon the field being declared. This ensures, for example, that dom id
-     * fields (see {@link UiBinderWriter#declareDomIdHolder()}) used by an HTMLPanel
-     * will be declared before it is.
+     * fields (see {@link com.google.gwt.uibinder.rebind.UiBinderWriter#declareDomIdHolder(String)})
+     * used by an HTMLPanel will be declared before it is.
      *
      * @param assignableType class or interface extened or implemented by this
      *          type
