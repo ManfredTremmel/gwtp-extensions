@@ -1,10 +1,10 @@
 package $package;
 
-import javax.inject.Inject;
-
 import com.gwtplatform.dispatch.rest.client.RestDispatch;
 import com.gwtplatform.dispatch.rest.client.core.StaticParametersFactory;
 import com.gwtplatform.dispatch.rest.delegates.client.AbstractResourceDelegate;
+
+import jakarta.inject.Inject;
 #foreach ($import in $imports)
 import $import;
 #end

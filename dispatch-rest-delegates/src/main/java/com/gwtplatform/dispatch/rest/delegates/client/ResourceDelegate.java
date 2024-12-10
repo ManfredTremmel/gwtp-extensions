@@ -25,35 +25,35 @@ import com.gwtplatform.dispatch.shared.DispatchRequest;
  * interface and {@link com.gwtplatform.dispatch.rest.client.RestDispatch} to simplify your code. Note that if your
  * resource interfaces don't return {@link com.gwtplatform.dispatch.rest.shared.RestAction RestAction&lt;?&gt;}s but the
  * result type directly, you will need to inject a {@link ResourceDelegate} to use your resource.
- * <p/>
+ * <p>
  * This delegate will not send the HTTP request until you call a method, that is not a sub-resource, from the underlying
  * resource. The underlying resource is returned when either {@link #withoutCallback()} or {@link
  * #withCallback(AsyncCallback)} are called.
- * <p/>
+ * <p>
  * The following example shows how to retrieve the {@link DispatchRequest} and delete a potential car:
  * <pre><code>
  * {@literal @}Path("/cars")
  * public interface CarsResource {
  *      CarResource car(int id);
  * }
- * <p/>
+ *
  * public interface CarResource {
  *      {@literal @}DELETE
  *      void delete();
  * }
- * <p/>
+ *
  * public class CarPresenter {
  *     private final ResourceDelegate&lt;CarsResource&gt; carsResourceDelegate;
- * <p/>
+ *
  *     {@literal @}Inject
  *     CarPresenter(ResourceDelegate&lt;CarsResource&gt; carsResourceDelegate) {
  *         this.carsResourceDelegate = carsResourceDelegate;
  *     }
- * <p/>
+ *
  *     {@literal @}Override
  *     public void onReveal() {
  *         DelegatingDispatchRequest dispatchRequest = new DelegatingDispatchRequest();
- * <p/>
+ *
  *         carsResourceDelegate
  *                 .withDelegatingDispatchRequest(dispatchRequest)
  *                 .withCallback(new AsyncCallback&lt;Void&gt;() {/{@literal * snip *}/});

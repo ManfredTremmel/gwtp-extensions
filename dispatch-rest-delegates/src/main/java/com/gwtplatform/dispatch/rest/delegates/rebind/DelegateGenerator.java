@@ -23,7 +23,6 @@ import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
 
-import javax.inject.Inject;
 import javax.ws.rs.Path;
 
 import org.apache.velocity.app.VelocityEngine;
@@ -44,6 +43,8 @@ import com.gwtplatform.dispatch.rest.rebind.utils.ClassDefinition;
 import com.gwtplatform.dispatch.rest.rebind.utils.EventBus;
 import com.gwtplatform.dispatch.rest.rebind.utils.Logger;
 import com.gwtplatform.dispatch.rest.shared.RestAction;
+
+import jakarta.inject.Inject;
 
 import static com.gwtplatform.dispatch.rest.rebind.utils.Generators.findGenerator;
 

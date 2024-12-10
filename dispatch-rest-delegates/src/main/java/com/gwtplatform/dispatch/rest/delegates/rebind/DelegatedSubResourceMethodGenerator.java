@@ -19,8 +19,6 @@ package com.gwtplatform.dispatch.rest.delegates.rebind;
 import java.io.StringWriter;
 import java.util.Map;
 
-import javax.inject.Inject;
-
 import org.apache.velocity.app.VelocityEngine;
 
 import com.google.gwt.core.ext.GeneratorContext;
@@ -32,6 +30,8 @@ import com.gwtplatform.dispatch.rest.rebind.resource.ResourceDefinition;
 import com.gwtplatform.dispatch.rest.rebind.subresource.SubResourceMethodDefinition;
 import com.gwtplatform.dispatch.rest.rebind.utils.ClassDefinition;
 import com.gwtplatform.dispatch.rest.rebind.utils.Logger;
+
+import jakarta.inject.Inject;
 
 public class DelegatedSubResourceMethodGenerator extends AbstractDelegatedMethodGenerator {
     private static final String TEMPLATE =

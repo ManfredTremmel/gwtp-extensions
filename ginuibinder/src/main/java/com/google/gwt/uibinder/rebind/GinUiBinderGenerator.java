@@ -30,7 +30,7 @@ import com.google.gwt.inject.client.Ginjector;
  * that allows fields to be instantiated using gin dependency
  * injection. Modifications are clearly indicated by
  * {@code MODIFICATION} comments.
- * <p/>
+ * <p>
  * To use this you need to use the following in your module file:
  * <pre> &lt;inherits name="com.google.gwt.uibinder.GinUiBinder" /&gt;</pre>
  * instead of {@code com.google.gwt.uibinder.UiBinder}.

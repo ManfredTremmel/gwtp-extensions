@@ -16,9 +16,9 @@
 
 package com.gwtplatform.dispatch.rest.delegates.rebind;
 
-import javax.inject.Singleton;
-
 import com.google.inject.AbstractModule;
+
+import jakarta.inject.Singleton;
 
 import static com.gwtplatform.dispatch.rest.rebind.extension.ExtensionModule.addExtensionGenerator;
 import static com.gwtplatform.dispatch.rest.rebind.resource.ResourceModule.addMethodGenerator;

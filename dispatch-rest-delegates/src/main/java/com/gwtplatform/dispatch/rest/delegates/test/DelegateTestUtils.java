@@ -24,9 +24,9 @@ import com.gwtplatform.dispatch.rest.delegates.client.ResourceDelegate;
 
 /**
  * Utility methods to help mocking {@link com.gwtplatform.dispatch.rest.delegates.client.ResourceDelegate}s.
- * <p/>
+ * <p>
  * <b>Important:</b> <ul> <li>{@link #init()} must be called before each test. Not doing it may cause unexpected
- * results. Using JUnit's {@link org.junit.Before @Before} is perfect for that.</li> <li>{@link
+ * results. Using JUnit's org.junit.Before is perfect for that.</li> <li>{@link
  * DelegateMocking#useResource(Object) useResource(Object)} must be called before any other methods <b>exactly once</b>
  * and <b>before</b> any other methods for the delegate is called. Assertion errors will be thrown otherwise.</li>
  * </ul>
