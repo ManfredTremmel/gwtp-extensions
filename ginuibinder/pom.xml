@@ -7,7 +7,7 @@
         <version>9</version>
     </parent>
 
-    <groupId>com.gwtplatform.extensions</groupId>
+    <groupId>de.knightsoft-net</groupId>
     <artifactId>ginuibinder</artifactId>
     <version>${gwt.version}-SNAPSHOT</version>
     <packaging>jar</packaging>
