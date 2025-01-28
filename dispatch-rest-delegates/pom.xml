@@ -10,7 +10,7 @@
 
     <groupId>de.knightsoft-net</groupId>
     <artifactId>dispatch-rest-delegates</artifactId>
-    <version>1.7-SNAPSHOT</version>
+    <version>1.7</version>
     <packaging>jar</packaging>
     <name>Rest-Dispatch Resource Delegates</name>
     <description>Allow Rest-Dispatch resources to return their raw result type directly.</description>
@@ -18,7 +18,7 @@
     <url>http://arcbees.github.io/GWTP/</url>
 
     <properties>
-        <gwtp.version>1.7-SNAPSHOT</gwtp.version>
+        <gwtp.version>1.7</gwtp.version>
         <gwt.version>2.12.1</gwt.version>
         <mockito.version>4.11.0</mockito.version>
         <junit.version>4.13.2</junit.version>

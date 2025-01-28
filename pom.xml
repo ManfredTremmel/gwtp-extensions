@@ -10,11 +10,28 @@
 
     <groupId>de.knightsoft-net</groupId>
     <artifactId>extensions</artifactId>
-    <version>1</version>
+    <version>1.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
 
     <modules>
         <module>ginuibinder</module>
         <module>dispatch-rest-delegates</module>
     </modules>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.sonatype.plugins</groupId>
+                <artifactId>nexus-staging-maven-plugin</artifactId>
+                <version>1.7.0</version>
+                <extensions>true</extensions>
+                <configuration>
+                    <!-- The Base URL of Nexus instance where we want to stage -->
+                    <serverId>sonatype-nexus-staging</serverId>
+                    <nexusUrl>https://oss.sonatype.org/</nexusUrl>
+                    <autoReleaseAfterClose>true</autoReleaseAfterClose>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

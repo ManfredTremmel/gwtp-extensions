@@ -9,7 +9,7 @@
 
     <groupId>de.knightsoft-net</groupId>
     <artifactId>ginuibinder</artifactId>
-    <version>${gwt.version}-SNAPSHOT</version>
+    <version>${gwt.version}</version>
     <packaging>jar</packaging>
     <name>GinUiBinder</name>
     <inceptionYear>2014</inceptionYear>
